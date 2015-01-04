@@ -1,0 +1,9 @@
+name: Bizukkit
+main: io.github.GoDieBawb.Bizukkit.Bizukkit
+version: 0.5
+commands:
+   biz:
+      description: This command makes you sound gangsta.
+      usage: /<command> [player]
+      permission: 
+      permission-message: You don't have <permission>
