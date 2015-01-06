@@ -1,3 +1,18 @@
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.project
+.classpath
+
+# Maven
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup

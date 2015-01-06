@@ -1,9 +1,71 @@
 name: Bizukkit
+description: Fun chat plugin to mess with people.
+authors: [GoDieBawb, thedark1337]
 main: io.github.GoDieBawb.Bizukkit.Bizukkit
-version: 0.5
+version: ${project.version}
 commands:
    biz:
-      description: This command makes you sound gangsta.
-      usage: /<command> [player]
-      permission: 
-      permission-message: You don't have <permission>
+      description: Lists help message.
+   biz british:
+      description: Oi mate, this will make yours or a mate's chat British.
+      usage: /biz british name OR /biz british
+      permission: bizukkit.british
+   biz ghetto:
+      description: Yo this shit will make a player's chat or yourself look ghetto ya dig?
+   biz l33t:
+      description: Transforms player's or self chat to leetspeak.
+      usage: /biz l33t name OR /biz l33t
+      permission: bizukkit.l33t
+   biz nonsense:
+      description: Transforms player's or self chat to nonsense.
+      usage: /biz nonsense name OR /biz nonsense
+      permission: bizukkit.nonsense
+   biz pirate:
+      description: Y'arr matey! shiver me timbers and have you or your friend talk like a pirate!
+      usage: /biz pirate name OR /biz pirate
+      permission: bizukkit.pirate
+   biz rich:
+      description: Good day sir/madam may I interest you or your friend in talking rich?
+      usage: /biz rich name OR /biz rich
+      permission: bizukkit.rich
+   biz smiley:
+      description: Smile! This will make either you or your friend's chat all emoticons.
+      usage: /biz smiley name OR /biz smiley
+      permission: bizukit.smiley
+
+permissions:
+  bizukkit.*:
+    description: gives all permissions to bizukkit
+    children:
+      bizukkit.british: true
+      bizukkit.ghetto: true
+      bizukkit.l33t: true
+      bizukkit.nonsense: true
+      bizukkit.other: true
+      bizukkit.pirate: true
+      bizukkit.rich: true
+      bizukkt.smiley: true
+  bizukkit.british:
+   description: Allows translation to British.
+   default: false
+  bizukkit.ghetto:
+   description: Allows translation to Ghetto.
+   default: false
+  bizukkit.l33t:
+   description: Allows translation to leetspeak.
+   default: false
+  bizukkit.nonsense:
+   description: Allows translation to nonsense.
+   default: false
+  bizukkit.other:
+   description: Allows translation of other people's chat.
+   default: false
+  bizukkit.pirate:
+   description: Allows translation to pirate.
+   default: false
+  bizukkit.rich:
+   description: Allows translation to rich.
+   default: false
+  bizukkit.smiley:
+   description: Allows translation to emoticon.
+   default: false
